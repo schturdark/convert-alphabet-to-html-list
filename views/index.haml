@@ -1,0 +1,14 @@
+%h1
+  Convert to HTML list from (a) to (z)
+
+%h2
+  Result
+
+%p= @result
+
+%h2 
+  enter the paragraph you want to convert
+
+%form{ :method => "get" }
+  %textarea{ :cols => 50, :rows => 10, :name => "input", :id => "input" }
+  %input{ :type => "submit", :value => "convert" }
